@@ -33,7 +33,7 @@ import { Toast } from 'primeng/toast';
   ],
   template: `
     <p-toast />
-    @if (!isLoading() && datasize()===0) {
+    @if (datasize()===0) {
 
     <div class="card flex flex-col gap-2 justify-center items-center">
       <p-fileupload

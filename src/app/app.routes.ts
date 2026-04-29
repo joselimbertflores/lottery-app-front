@@ -18,6 +18,11 @@ export const routes: Routes = [
     title: 'Inicio - Sorteo',
   },
   {
+    path: 'upload',
+    loadComponent: () => import('./pages/data-upload-page/data-upload-page'),
+    title: 'Carga de Datos',
+  },
+  {
     path: 'home',
     component: HomeComponent,
     title: 'Menu',
